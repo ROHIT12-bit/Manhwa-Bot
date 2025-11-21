@@ -1,16 +1,16 @@
-from aiohttp import web
-import asyncio
+import http.server
+import socketserver
+import threading
 
-async def ok(request):
-    return web.Response(text="OK")
+PORT = 8080  # health check port
 
-async def start_server():
-    app = web.Application()
-    app.router.add_get("/", ok)
-    runner = web.AppRunner(app)
-    await runner.setup()
-    site = web.TCPSite(runner, "0.0.0.0", 8080)  # health check port
-    await site.start()
+def start_server():
+    class Handler(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, format, *args):
+            return  # disable logs
 
-loop = asyncio.get_event_loop()
-loop.create_task(start_server())
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+        httpd.serve_forever()
+
+thread = threading.Thread(target=start_server, daemon=True)
+thread.start()
