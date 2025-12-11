@@ -158,23 +158,24 @@ async def start(client, message):
     "</blockquote>"),
       reply_markup=InlineKeyboardMarkup([
           [  # SUPPORT (styled letters, each opens support link)
-              InlineKeyboardButton("s", url="https://t.me/WizardBotHelper"),
-              InlineKeyboardButton("ᴜ", url="https://t.me/WizardBotHelper"),
-              InlineKeyboardButton("ᴘ", url="https://t.me/WizardBotHelper"),
-              InlineKeyboardButton("ᴘ", url="https://t.me/WizardBotHelper"),
-              InlineKeyboardButton("ᴏ", url="https://t.me/WizardBotHelper"),
-              InlineKeyboardButton("ʀ", url="https://t.me/WizardBotHelper"),
-              InlineKeyboardButton("ᴛ", url="https://t.me/WizardBotHelper"),
+              InlineKeyboardButton("ʀ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ɪ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ᴏ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("s", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ʜ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ɪ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ɴ", url="https://t.me/RioShin"),
           ],
           [  # SETTINGS + CLOSE (styled full words)
               InlineKeyboardButton("⌜sᴇᴛᴛɪɴɢs⌟", callback_data="mus"),
               InlineKeyboardButton("⌜ᴄʟᴏsᴇ⌟", callback_data="kclose")
           ],
           [  # REPO (styled letters, all linked to repo)
-              InlineKeyboardButton("ʀ", url="https://github.com/Dra-Sama/Manhwa-Bot"),
-              InlineKeyboardButton("ᴇ", url="https://github.com/Dra-Sama/Manhwa-Bot"),
-              InlineKeyboardButton("ᴘ", url="https://github.com/Dra-Sama/Manhwa-Bot"),
-              InlineKeyboardButton("ᴏ", url="https://github.com/Dra-Sama/Manhwa-Bot"),
+              InlineKeyboardButton("ᴍ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ᴀ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ɴ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ɢ", url="https://t.me/RioShin"),
+              InlineKeyboardButton("ᴀ", url="https://t.me/RioShin"),
           ]
       ]))
 
