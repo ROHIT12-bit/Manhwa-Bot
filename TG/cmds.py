@@ -145,16 +145,17 @@ async def start(client, message):
   await message.reply_photo(
       photo,
       caption=
-      ("<b><i>Welcome to the best manga pdf bot in telegram!!</i></b>\n"
-       "\n"
-       "<b><i>How to use? Just type the name of some manga you want to keep up to date.</i></b>\n"
-       "\n"
-       "<b><i>For example:</i></b>\n"
-       "<i><code>One Piece</i></code>\n"
-       "\n"
-       f"<b><i>Ping:- {ping}</i></b>"
-       "\n"
-       "<b><i>Check /help for more information.</i></b>"),
+      (   "<blockquote>"
+    "<b><i>👋 Welcome to the Ultimate Manga PDF Bot!</i></b>\n\n"
+    "🔹 <i>Want to read manga in high-quality PDF?</i>\n"
+    "🔹 <i>Just send the name of any manga and I’ll fetch it for you!</i>\n\n"
+    "<b><i>Example:</i></b>\n"
+    "<code>One Piece</code>\n\n"
+    f"📡 <b><i>Ping:</i></b> {ping}\n\n"
+    "⚡ <b><i>Powered by </i></b>"
+    "<a href='https://t.me/BotsKingdoms'>ʙᴏᴛsᴋɪɴɢᴅᴏᴍs</a>\n\n"
+    "<b><i>Use /help to see all features.</i></b>"
+    "</blockquote>"),
       reply_markup=InlineKeyboardMarkup([
           [  # SUPPORT (styled letters, each opens support link)
               InlineKeyboardButton("s", url="https://t.me/WizardBotHelper"),
